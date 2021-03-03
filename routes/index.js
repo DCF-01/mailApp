@@ -10,6 +10,7 @@ router.get('/', function(req, res, next) {
 router.get('/send', function(req, res, next) {
     handleSend();
     res.render('index', { title: 'Express'});
-})
+});
+
 
 module.exports = router;
