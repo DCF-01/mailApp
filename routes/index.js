@@ -15,7 +15,7 @@ router.post('/send', function(req, res, next){
     let text = buff.toString('utf-8');
     message.html = text;
     
-
+    console.log(message);
     handleSend(message);
     res.status(200);
 })
